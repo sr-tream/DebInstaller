@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="desktop-application">
+  <id>org.example.debinstaller.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license> https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-metadata_license </project_license>
+  <name>debinstaller</name>
+  <name xml:lang="ast">debinstaller</name>
+  <name xml:lang="ca">debinstaller</name>
+  <name xml:lang="ca-valencia">debinstaller</name>
+  <name xml:lang="cs">debinstaller</name>
+  <name xml:lang="de">debinstaller</name>
+  <name xml:lang="en-GB">debinstaller</name>
+  <name xml:lang="es">debinstaller</name>
+  <name xml:lang="et">debinstaller</name>
+  <name xml:lang="fr">debinstaller</name>
+  <name xml:lang="gl">debinstaller</name>
+  <name xml:lang="ko">debinstaller</name>
+  <name xml:lang="nl">debinstaller</name>
+  <name xml:lang="pl">debinstaller</name>
+  <name xml:lang="pt">debinstaller</name>
+  <name xml:lang="sk">debinstaller</name>
+  <name xml:lang="sl">debinstaller</name>
+  <name xml:lang="sv">debinstaller</name>
+  <name xml:lang="tr">debinstaller</name>
+  <name xml:lang="uk">debinstaller</name>
+  <name xml:lang="x-test">xxdebinstallerxx</name>
+  <name xml:lang="zh-CN">debinstaller</name>
+  <summary> https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary </summary>
+  <summary xml:lang="ca">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="ca-valencia">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="cs">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="de">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="en-GB">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="es">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="et">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="fr">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="gl">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="ko">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="nl">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="pl">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="pt">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="sk">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="sl">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="sv">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="tr">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="uk">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <summary xml:lang="x-test">xxhttps://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summaryxx</summary>
+  <summary xml:lang="zh-CN">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-summary</summary>
+  <description>
+    <p> https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description </p>
+    <p xml:lang="ca">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="ca-valencia">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="cs">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="de">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="en-GB">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="es">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="et">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="fr">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="gl">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="ko">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="nl">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="pl">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="pt">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="sk">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="sl">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="sv">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="tr">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="uk">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+    <p xml:lang="x-test">xxhttps://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-descriptionxx</p>
+    <p xml:lang="zh-CN">https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-description</p>
+  </description>
+  <url type="homepage">https://www.example.org</url>
+  <url type="bugtracker">https://bugs.example.org</url>
+  <url type="donation">https://www.example.org/community/donations</url>
+  <screenshots>
+    <screenshot type="default">
+      <image>
+	https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-screenshots
+	Central hosting is still being sorted out, poke sitter@kde.org for more info.
+      </image>
+    </screenshot>
+  </screenshots>
+  <provides>
+    <binary>debinstaller</binary>
+    <binary xml:lang="ast">debinstaller</binary>
+    <binary xml:lang="ca">debinstaller</binary>
+    <binary xml:lang="ca-valencia">debinstaller</binary>
+    <binary xml:lang="cs">debinstaller</binary>
+    <binary xml:lang="de">debinstaller</binary>
+    <binary xml:lang="en-GB">debinstaller</binary>
+    <binary xml:lang="es">debinstaller</binary>
+    <binary xml:lang="et">debinstaller</binary>
+    <binary xml:lang="fr">debinstaller</binary>
+    <binary xml:lang="gl">debinstaller</binary>
+    <binary xml:lang="ko">debinstaller</binary>
+    <binary xml:lang="nl">debinstaller</binary>
+    <binary xml:lang="pl">debinstaller</binary>
+    <binary xml:lang="pt">debinstaller</binary>
+    <binary xml:lang="sk">debinstaller</binary>
+    <binary xml:lang="sl">debinstaller</binary>
+    <binary xml:lang="sv">debinstaller</binary>
+    <binary xml:lang="tr">debinstaller</binary>
+    <binary xml:lang="uk">debinstaller</binary>
+    <binary xml:lang="x-test">xxdebinstallerxx</binary>
+    <binary xml:lang="zh-CN">debinstaller</binary>
+  </provides>
+  <project_group>KDE</project_group>
+</component>
