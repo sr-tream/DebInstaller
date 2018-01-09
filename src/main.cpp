@@ -60,11 +60,13 @@ int main(int argc, char **argv)
     parser.process(application);
     aboutData.processCommandLine(&parser);
     
+    bool runApp = false;
     if (!parser.positionalArguments().isEmpty()){
         for(auto &pkg : parser.positionalArguments()){
             if (QFileInfo(pkg).suffix().toLower() == "deb"){
                 DebInstallerWindow *mainWindow = new DebInstallerWindow(pkg);
                 mainWindow->show();
+                runApp = true;
             }
         }
     } else {
@@ -74,8 +76,9 @@ int main(int argc, char **argv)
             if (QFileInfo(pkg).suffix().toLower() == "deb"){
                 DebInstallerWindow *mainWindow = new DebInstallerWindow(pkg);
                 mainWindow->show();
+                runApp = true;
             }
         }
     }
-    return application.exec();
+    return runApp ? application.exec() : -1;
 }
