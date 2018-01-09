@@ -291,7 +291,7 @@ void DebInstallerWindow::onRemoveClicked()
     }
     if (!command.isEmpty())
         command += " ";
-    command += m_ui.pkgName->text();
+    command += "'" + m_ui.pkgName->text() + "'";
     args << command;
     m_processPkg->setArguments(args);
     m_processPkg->start();
