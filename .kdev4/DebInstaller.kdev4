@@ -1,0 +1,55 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x18\x00D\x00e\x00b\x00I\x00n\x00s\x00t\x00a\x00l\x00l\x00e\x00r)
+
+[CMake]
+Build Directory Count=1
+Current Build Directory Index-Host System=0
+
+[CMake][CMake Build Directory 0]
+Build Directory Path=/home/sr-tream/Projects/workspace/DebInstaller/build
+Build Type=MinSizeRel
+CMake Binary=/usr/bin/cmake
+CMake Executable=/usr/bin/cmake
+Environment Profile=default
+Extra Arguments=
+Install Directory=/usr/local
+Runtime=Host System
+
+[CustomDefinesAndIncludes][ProjectPath0]
+Path=.
+parseAmbiguousAsCPP=true
+parserArguments=-ferror-limit=100 -fspell-checking -Wdocumentation -Wunused-parameter -Wunreachable-code -Wall -std=c++14
+parserArgumentsC=-ferror-limit=100 -fspell-checking -Wdocumentation -Wunused-parameter -Wunreachable-code -Wall -std=c99
+
+[CustomDefinesAndIncludes][ProjectPath0][Compiler]
+Name=GCC
+
+[Launch]
+Launch Configurations=Launch Configuration 0
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=Новая конфигурация «Компилируемая программа»
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Arguments=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x00)
+Dependency Action=Install
+EnvironmentGroup=default
+Executable=file:///home/sr-tream/Projects/workspace/DebInstaller/build/src/debinstaller
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+Project Target=DebInstaller,src,debinstaller
+Use External Terminal=false
+Working Directory=
+isExecutable=true
+
+[MakeBuilder]
+Install As Root=true
+Number Of Jobs=8
+Override Number Of Jobs=true
+Su Command=kdesudo
+
+[Project]
+VersionControlSupport=kdevgit

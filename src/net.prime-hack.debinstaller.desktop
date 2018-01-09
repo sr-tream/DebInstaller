@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=DebInstaller
+Exec=debinstaller
+Icon=debinstaller
+Type=Application
+GenericName=A installer of debian packages
+GenericName[ru]=Установщик debian пакетов

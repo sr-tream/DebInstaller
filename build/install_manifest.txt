@@ -1,0 +1,3 @@
+/usr/local/bin/debinstaller
+/usr/local/share/applications/net.prime-hack.debinstaller.desktop
+/usr/local/share/metainfo/net.prime-hack.debinstaller.appdata.xml

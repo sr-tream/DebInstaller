@@ -1,5 +1,5 @@
 /*
- Copyright (C) %{CURRENT_YEAR} by %{AUTHOR} <%{EMAIL}>
+ Copyright (C) 2018 by SR_team <sr-tream@yandex.ru>
 
  This program is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public License as
@@ -28,6 +28,7 @@
 // Qt headers
 #include <QApplication>
 #include <QCommandLineParser>
+#include <QFileDialog>
 
 int main(int argc, char **argv)
 {
@@ -36,29 +37,45 @@ int main(int argc, char **argv)
     KLocalizedString::setApplicationDomain("debinstaller");
 
     KAboutData aboutData( QStringLiteral("debinstaller"),
-                          i18n("Simple App"),
+                          i18n("DebInstaller"),
                           QStringLiteral("%{VERSION}"),
-                          i18n("A Simple Application written with KDE Frameworks"),
+                          i18n("A installer of debian packages"),
                           KAboutLicense::GPL,
-                          i18n("Copyright %{CURRENT_YEAR}, %{AUTHOR} <%{EMAIL}>"));
+                          i18n("Copyright 2018, SR_team <sr-tream@yandex.ru>"));
 
-    aboutData.addAuthor(i18n("%{AUTHOR}"),i18n("Author"), QStringLiteral("%{EMAIL}"));
-    aboutData.setOrganizationDomain("example.org");
-    aboutData.setDesktopFileName(QStringLiteral("org.example.debinstaller"));
+    aboutData.addAuthor(i18n("SR_team"),i18n("Author"), QStringLiteral("sr-tream@yandex.ru"));
+    aboutData.setOrganizationDomain("prime-hack.net");
+    aboutData.setDesktopFileName(QStringLiteral("net.prime-hack.debinstaller"));
 
     KAboutData::setApplicationData(aboutData);
     application.setWindowIcon(QIcon::fromTheme(QStringLiteral("debinstaller")));
 
     QCommandLineParser parser;
+    parser.addPositionalArgument("deb", QCoreApplication::translate("main", "Path to debian package"));
+    
     parser.addHelpOption();
     parser.addVersionOption();
     aboutData.setupCommandLine(&parser);
 
     parser.process(application);
     aboutData.processCommandLine(&parser);
-
-    DebInstallerWindow *mainWindow = new DebInstallerWindow;
-    mainWindow->show();
-
+    
+    if (!parser.positionalArguments().isEmpty()){
+        for(auto &pkg : parser.positionalArguments()){
+            if (QFileInfo(pkg).suffix().toLower() != "deb"){
+                DebInstallerWindow *mainWindow = new DebInstallerWindow(pkg);
+                mainWindow->show();
+            }
+        }
+    } else {
+        // TODO: выкидывать диалог выбора файла, и таки выкинуть reurn из этого условия.
+        QStringList packages = QFileDialog::getOpenFileNames(nullptr, "Select debian packages", QDir::homePath(), "*.deb");
+        for(auto &pkg : packages){
+            if (QFileInfo(pkg).suffix().toLower() != "deb"){
+                DebInstallerWindow *mainWindow = new DebInstallerWindow(pkg);
+                mainWindow->show();
+            }
+        }
+    }
     return application.exec();
 }

@@ -14,5 +14,5 @@ target_link_libraries( debinstaller
 )
 
 install( TARGETS debinstaller ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} )
-install( PROGRAMS org.example.debinstaller.desktop DESTINATION ${KDE_INSTALL_APPDIR} )
-install( FILES org.example.debinstaller.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR} )
+install( PROGRAMS net.prime-hack.debinstaller.desktop DESTINATION ${KDE_INSTALL_APPDIR} )
+install( FILES net.prime-hack.debinstaller.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR} )

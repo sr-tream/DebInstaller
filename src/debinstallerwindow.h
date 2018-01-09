@@ -1,5 +1,5 @@
 /*
- Copyright (C) %{CURRENT_YEAR} by %{AUTHOR} <%{EMAIL}>
+ Copyright (C) 2018 by SR_team <sr-tream@yandex.ru>
 
  This program is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public License as
@@ -25,33 +25,41 @@
 #include "ui_debinstaller.h"
 
 #include <QMainWindow>
+#include <QSettings>
+#include <QFileInfo>
+#include <QProcess>
+#include <QRegExp>
+#include <QMessageBox>
+#include <QScrollBar>
+#include <QTextCodec>
+#include <QTextDecoder>
 
-/**
- * This class serves as the main window for DebInstaller.  It handles the
- * menus, toolbars and status bars.
- *
- * @short Main window class
- * @author %{AUTHOR} <%{EMAIL}>
- * @version %{VERSION}
- */
 class DebInstallerWindow : public QMainWindow
 {
     Q_OBJECT
 public:
-    /**
-     * Default Constructor
-     */
-    DebInstallerWindow();
-
-    /**
-     * Default Destructor
-     */
-    ~DebInstallerWindow() override;
+    DebInstallerWindow( QString pkg );
+    
+protected:
+    void closeEvent(QCloseEvent * event) override;
+    
+    virtual void loadPkgInfo();
+    virtual void parsePkgInfo(const QStringList &pkgInfo);
+    virtual void setPkgInfo(const QString &section, const QString &data);
+    
+    virtual bool checkPkgInstalled();
+    
+private slots:
+    void onInstallClicked();
+    void onRemoveClicked();
+    void onAddLogData();
+    void onProcessFinished(int exitCode, QProcess::ExitStatus exitStatus);
 
 private:
-    // this is the name of the root widget inside our Ui file
-    // you can rename it in designer and then change it here
     Ui::mainWidget m_ui;
+    QSettings     *m_set;
+    QFileInfo      m_pkg;
+    QProcess      *m_processPkg;
 };
 
 #endif // DEBINSTALLERWINDOW_H
