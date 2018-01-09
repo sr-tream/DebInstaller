@@ -54,11 +54,11 @@ CMAKE_BINARY_DIR = /home/sr-tream/Projects/workspace/DebInstaller/build
 include CMakeFiles/fetch-translations.dir/progress.make
 
 CMakeFiles/fetch-translations: releaseme
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sr-tream/Projects/workspace/DebInstaller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Downloading translations for debinstaller branch trunk..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sr-tream/Projects/workspace/DebInstaller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Downloading translations for DebInstaller branch trunk..."
 	git -C /home/sr-tream/Projects/workspace/DebInstaller/build/releaseme pull
 	cmake -E remove_directory /home/sr-tream/Projects/workspace/DebInstaller/build/po
 	cmake -E remove_directory /home/sr-tream/Projects/workspace/DebInstaller/build/poqm
-	ruby /home/sr-tream/Projects/workspace/DebInstaller/build/releaseme/fetchpo.rb --origin trunk --project debinstaller --output-dir /home/sr-tream/Projects/workspace/DebInstaller/build/po --output-poqm-dir /home/sr-tream/Projects/workspace/DebInstaller/build/poqm /home/sr-tream/Projects/workspace/DebInstaller
+	ruby /home/sr-tream/Projects/workspace/DebInstaller/build/releaseme/fetchpo.rb --origin trunk --project DebInstaller --output-dir /home/sr-tream/Projects/workspace/DebInstaller/build/po --output-poqm-dir /home/sr-tream/Projects/workspace/DebInstaller/build/poqm /home/sr-tream/Projects/workspace/DebInstaller
 
 releaseme:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sr-tream/Projects/workspace/DebInstaller/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Fetching releaseme scripts to download translations..."

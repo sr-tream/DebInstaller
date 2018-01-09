@@ -62,7 +62,7 @@ int main(int argc, char **argv)
     
     if (!parser.positionalArguments().isEmpty()){
         for(auto &pkg : parser.positionalArguments()){
-            if (QFileInfo(pkg).suffix().toLower() != "deb"){
+            if (QFileInfo(pkg).suffix().toLower() == "deb"){
                 DebInstallerWindow *mainWindow = new DebInstallerWindow(pkg);
                 mainWindow->show();
             }
@@ -71,7 +71,7 @@ int main(int argc, char **argv)
         // TODO: выкидывать диалог выбора файла, и таки выкинуть reurn из этого условия.
         QStringList packages = QFileDialog::getOpenFileNames(nullptr, "Select debian packages", QDir::homePath(), "*.deb");
         for(auto &pkg : packages){
-            if (QFileInfo(pkg).suffix().toLower() != "deb"){
+            if (QFileInfo(pkg).suffix().toLower() == "deb"){
                 DebInstallerWindow *mainWindow = new DebInstallerWindow(pkg);
                 mainWindow->show();
             }
