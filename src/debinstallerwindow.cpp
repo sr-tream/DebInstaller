@@ -35,10 +35,10 @@ DebInstallerWindow::DebInstallerWindow( QString pkg )
     QObject::connect(m_ui.remove, SIGNAL(clicked()), this, SLOT(onRemoveClicked()));
     
     m_set = new QSettings("Prime-Hack", "DebInstaller", this);
-    m_ui.sudo->setText(m_set->value("sudo", "kdesudo").toString());
-    m_ui.apt->setText(m_set->value("apt", "apt-get").toString());
-    m_ui.installArgs->setText(m_set->value("installArgs", "install --force-yes").toString());
-    m_ui.removeArgs->setText(m_set->value("removeArgs", "remove --force-yes").toString());
+    m_ui.sudo->setText(m_set->value("sudo", "kdesudo -c").toString());
+    m_ui.apt->setText(m_set->value("apt", "apt").toString());
+    m_ui.installArgs->setText(m_set->value("installArgs", "install -y").toString());
+    m_ui.removeArgs->setText(m_set->value("removeArgs", "remove -y").toString());
     m_ui.checkInstall->setText(m_set->value("checkInstall", "list --installed").toString());
     m_ui.getInfo->setText(m_set->value("getInfo", "dpkg -I").toString());
     
